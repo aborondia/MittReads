@@ -29,11 +29,8 @@ const App = () => {
   return (
     <div className="app">
       <Switch>
-
         <Route path="/search">
-          <Search
-          books={books}
-          />
+          <Search books={books} />
         </Route>
 
         <Route path="/">
@@ -53,7 +50,6 @@ const App = () => {
             </div>
           </div>
         </Route>
-
       </Switch>
     </div>
   );

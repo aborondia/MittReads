@@ -1,4 +1,16 @@
-const Book = ({ title, authors, image }) => {
+const Book = ({ title, authors, image, id }) => {
+  const updateBookShelfStatus = async (event) => {
+    const valueToUpdateWith = event.target.value;
+    console.log(event.target.value);
+    const response = await fetch("http://localhost:3001/books/bUybAgAAQBAJ/", {
+      method: "PATCH",
+      headers: { "Content-Type": "application.json" },
+      body: JSON.stringify({
+        status: valueToUpdateWith,
+      }),
+    });
+  };
+
   return (
     <li>
       <div className="book">
@@ -8,12 +20,11 @@ const Book = ({ title, authors, image }) => {
             style={{
               width: "128px",
               height: "193px",
-              backgroundImage:
-                `url(${image})`,
+              backgroundImage: `url(${image})`,
             }}
           ></div>
           <div className="book-shelf-changer">
-            <select>
+            <select onClick={updateBookShelfStatus}>
               <option value="move" disabled="">
                 Move to...
               </option>
