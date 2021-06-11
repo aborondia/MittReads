@@ -6,31 +6,24 @@ import CurrentlyReading from "./components/CurrentlyReading";
 import WantToRead from "./components/WantToRead";
 import Read from "./components/Read";
 import Search from "./components/Search";
+import { getBooks } from "./services/apiHandler";
 
 const App = () => {
   const [books, setBooks] = useState([]);
 
-  const getBooks = async () => {
-    const response = await fetch("http://localhost:3001/books");
-
-    if (!response.ok) {
-      throw new Error("Fetch was not successful");
-    }
-
-    const data = await response.json();
-
+  const updateBooks = (data) => {
     setBooks(data);
   };
 
   useEffect(() => {
-    getBooks();
+    getBooks(updateBooks);
   }, []);
 
   return (
     <div className="app">
       <Switch>
         <Route path="/search">
-          <Search books={books} />
+          <Search books={books} updateBooks={updateBooks} />
         </Route>
 
         <Route path="/">
@@ -40,9 +33,9 @@ const App = () => {
             </div>
             <div className="list-books-content">
               <div>
-                <CurrentlyReading />
-                <WantToRead />
-                <Read />
+                <CurrentlyReading books={books} updateBooks={updateBooks} />
+                <WantToRead books={books} updateBooks={updateBooks} />
+                <Read books={books} updateBooks={updateBooks} />
               </div>
             </div>
             <div className="open-search">

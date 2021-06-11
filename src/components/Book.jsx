@@ -1,14 +1,22 @@
-const Book = ({ title, authors, image, id }) => {
+import { getBooks } from "../services/apiHandler";
+
+const Book = ({ title, authors, image, id, updateBooks }) => {
   const updateBookShelfStatus = async (event) => {
     const valueToUpdateWith = event.target.value;
-    console.log(event.target.value);
-    const response = await fetch("http://localhost:3001/books/bUybAgAAQBAJ/", {
+
+    if (valueToUpdateWith === "move") {
+      return;
+    }
+
+    const response = await fetch(`http://localhost:3001/books/${id}`, {
       method: "PATCH",
-      headers: { "Content-Type": "application.json" },
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        status: valueToUpdateWith,
+        shelfStatus: valueToUpdateWith,
       }),
     });
+
+    getBooks(updateBooks);
   };
 
   return (
@@ -17,6 +25,7 @@ const Book = ({ title, authors, image, id }) => {
         <div className="book-top">
           <div
             className="book-cover"
+            onClick={updateBookShelfStatus}
             style={{
               width: "128px",
               height: "193px",

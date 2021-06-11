@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import Book from "./Book";
 
-const Search = ({ books }) => {
+const Search = ({ books, updateBooks }) => {
   const [searchResults, setSearchResults] = useState([]);
   const searchResultsLength = searchResults.length;
 
@@ -54,6 +54,7 @@ const Search = ({ books }) => {
                 }
                 id={book.id}
                 key={index}
+                updateBooks={updateBooks}
               />
             );
           })}
