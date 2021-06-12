@@ -1103,7 +1103,7 @@
       "infoLink": "http://books.google.com/books?id=sqCGh16dvbIC&dq=biography&hl=&source=gbs_api",
       "canonicalVolumeLink": "https://books.google.com/books/about/Banting.html?hl=&id=sqCGh16dvbIC",
       "id": "sqCGh16dvbIC",
-      "shelfStatus": "read"
+      "shelfStatus": "none"
     },
     {
       "title": "W. H. Auden",
@@ -1832,7 +1832,7 @@
       "infoLink": "http://books.google.com/books?id=BjDuAAAAMAAJ&dq=comics&hl=&source=gbs_api",
       "canonicalVolumeLink": "https://books.google.com/books/about/Batman.html?hl=&id=BjDuAAAAMAAJ",
       "id": "BjDuAAAAMAAJ",
-      "shelfStatus": "wantToRead"
+      "shelfStatus": "none"
     },
     {
       "title": "Comics Versus Art",
@@ -14516,7 +14516,8 @@
       "previewLink": "http://books.google.com/books?id=TpNkDQAAQBAJ&printsec=frontcover&dq=travel&hl=&cd=4&source=gbs_api",
       "infoLink": "https://play.google.com/store/books/details?id=TpNkDQAAQBAJ&source=gbs_api",
       "canonicalVolumeLink": "https://market.android.com/details?id=book-TpNkDQAAQBAJ",
-      "id": "TpNkDQAAQBAJ"
+      "id": "TpNkDQAAQBAJ",
+      "shelfStatus": "read"
     },
     {
       "title": "Travel in the Ancient World",
@@ -14644,7 +14645,8 @@
       "previewLink": "http://books.google.com/books?id=IbTT1yIfsYIC&printsec=frontcover&dq=travel&hl=&cd=7&source=gbs_api",
       "infoLink": "http://books.google.com/books?id=IbTT1yIfsYIC&dq=travel&hl=&source=gbs_api",
       "canonicalVolumeLink": "https://books.google.com/books/about/A_Dictionary_of_Travel_and_Tourism_Termi.html?hl=&id=IbTT1yIfsYIC",
-      "id": "IbTT1yIfsYIC"
+      "id": "IbTT1yIfsYIC",
+      "shelfStatus": "wantToRead"
     },
     {
       "title": "The Ethics of Travel",
@@ -17320,7 +17322,8 @@
       "previewLink": "http://books.google.com/books?id=wc01KwHUeeoC&printsec=frontcover&dq=web+development&hl=&cd=11&source=gbs_api",
       "infoLink": "http://books.google.com/books?id=wc01KwHUeeoC&dq=web+development&hl=&source=gbs_api",
       "canonicalVolumeLink": "https://books.google.com/books/about/Advanced_FileMaker_Pro_6_Web_Development.html?hl=&id=wc01KwHUeeoC",
-      "id": "wc01KwHUeeoC"
+      "id": "wc01KwHUeeoC",
+      "shelfStatus": "currentlyReading"
     },
     {
       "title": "Flask Web Development",

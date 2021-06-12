@@ -17,6 +17,8 @@ const Book = ({ title, authors, image, id, shelfStatus, updateBooks }) => {
     });
 
     getBooks(updateBooks);
+    
+    return response;
   };
 
   return (

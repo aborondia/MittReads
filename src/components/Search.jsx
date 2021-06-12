@@ -9,28 +9,45 @@ const Search = ({ books, updateBooks }) => {
   const searchResultsLength = searchResults.length;
 
   useEffect(() => {
-    if (searchInput === "") {
-      setDisplaySearchText("");
-      return;
-    }
-    setDisplaySearchText(
-      `Your Search Returned ${searchResultsLength} ${
-        searchResultsLength === 1 ? "result" : "results"
-      }`
-    );
+    displaySearchResults();
   }, [searchInput]);
 
-  const displaySearchResults = (event) => {
-    const searchInput = event.target.value.toUpperCase();
+  const sortBySearchedText = (resultsFound) => {
+    resultsFound.sort((a, b) => {
+      for (let letter of searchInput) {
+        if (a.title[0] === "") {
+          return 0;
+        }
 
-    if (searchInput === "") {
+        if (a.title[0].toUpperCase() === letter) {
+          return -1;
+        }
+      }
+    });
+
+    setDisplaySearchText(
+      `Your Search Returned ${resultsFound.length} ${
+        resultsFound.length === 1 ? "result" : "results"
+      }`
+    );
+
+    return resultsFound;
+  };
+
+  const displaySearchResults = () => {
+    if (searchInput.replace(/\s+/g, "") === "") {
+      setDisplaySearchText("");
       setSearchResults([]);
       return;
     }
 
-    const resultsFound = [...books].filter((book) => {
-      return book.title.toUpperCase().includes(searchInput.toUpperCase());
+    let resultsFound = [...books].filter((book) => {
+      return book.title
+        .toUpperCase()
+        .includes(searchInput.toUpperCase().trim());
     });
+
+    resultsFound = sortBySearchedText(resultsFound);
 
     setSearchResults(resultsFound);
   };
@@ -46,8 +63,7 @@ const Search = ({ books, updateBooks }) => {
             type="text"
             placeholder="Search by title or author"
             onChange={(event) => {
-              displaySearchResults(event);
-              setSearchInput(event.target.value)
+              setSearchInput(event.target.value.toUpperCase());
             }}
           />
         </div>
