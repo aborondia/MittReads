@@ -1,56 +1,29 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Book from "./Book";
+import { displaySearchResults } from "../services/searchHandler";
 
 const Search = ({ books, updateBooks }) => {
   const [searchResults, setSearchResults] = useState([]);
   const [searchInput, setSearchInput] = useState("");
   const [displaySearchText, setDisplaySearchText] = useState("");
-  const searchResultsLength = searchResults.length;
 
   useEffect(() => {
-    displaySearchResults();
-  }, [searchInput]);
-
-  const sortBySearchedText = (resultsFound) => {
-    resultsFound.sort((a, b) => {
-      for (let letter of searchInput) {
-        if (a.title[0] === "") {
-          return 0;
-        }
-
-        if (a.title[0].toUpperCase() === letter) {
-          return -1;
-        }
-      }
-    });
-
-    setDisplaySearchText(
-      `Your Search Returned ${resultsFound.length} ${
-        resultsFound.length === 1 ? "result" : "results"
-      }`
-    );
-
-    return resultsFound;
-  };
-
-  const displaySearchResults = () => {
     if (searchInput.replace(/\s+/g, "") === "") {
       setDisplaySearchText("");
       setSearchResults([]);
       return;
     }
 
-    let resultsFound = [...books].filter((book) => {
-      return book.title
-        .toUpperCase()
-        .includes(searchInput.toUpperCase().trim());
-    });
-
-    resultsFound = sortBySearchedText(resultsFound);
+    const resultsFound = displaySearchResults(books, searchInput);
 
     setSearchResults(resultsFound);
-  };
+    setDisplaySearchText(
+      `Your Search Returned ${resultsFound.length} ${
+        resultsFound.length === 1 ? "result" : "results"
+      }`
+    );
+  }, [searchInput]);
 
   return (
     <div className="search-books">

@@ -14653,7 +14653,7 @@
       "infoLink": "http://books.google.com/books?id=IbTT1yIfsYIC&dq=travel&hl=&source=gbs_api",
       "canonicalVolumeLink": "https://books.google.com/books/about/A_Dictionary_of_Travel_and_Tourism_Termi.html?hl=&id=IbTT1yIfsYIC",
       "id": "IbTT1yIfsYIC",
-      "shelfStatus": "wantToRead"
+      "shelfStatus": "read"
     },
     {
       "title": "The Ethics of Travel",
@@ -16069,7 +16069,8 @@
       "previewLink": "http://books.google.com/books?id=tXrPCgAAQBAJ&printsec=frontcover&dq=virtual+reality&hl=&cd=1&source=gbs_api",
       "infoLink": "https://play.google.com/store/books/details?id=tXrPCgAAQBAJ&source=gbs_api",
       "canonicalVolumeLink": "https://market.android.com/details?id=book-tXrPCgAAQBAJ",
-      "id": "tXrPCgAAQBAJ"
+      "id": "tXrPCgAAQBAJ",
+      "shelfStatus": "wantToRead"
     },
     {
       "title": "Virtual Reality in Geography",
