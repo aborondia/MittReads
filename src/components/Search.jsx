@@ -2,14 +2,18 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Book from "./Book";
 import { displaySearchResults } from "../services/searchHandler";
+import useDebounce from "../services/debouncer";
+import { stringEmpty } from "../services/stringHandler";
+
 
 const Search = ({ books, updateBooks }) => {
   const [searchResults, setSearchResults] = useState([]);
   const [searchInput, setSearchInput] = useState("");
   const [displaySearchText, setDisplaySearchText] = useState("");
+  const debouncedSearchInput = useDebounce(searchInput, 500);
 
   useEffect(() => {
-    if (searchInput.replace(/\s+/g, "") === "") {
+    if (stringEmpty(searchInput)) {
       setDisplaySearchText("");
       setSearchResults([]);
       return;
@@ -23,7 +27,7 @@ const Search = ({ books, updateBooks }) => {
         resultsFound.length === 1 ? "result" : "results"
       }`
     );
-  }, [searchInput]);
+  }, [debouncedSearchInput]);
 
   return (
     <div className="search-books">

@@ -10,3 +10,7 @@ export const propertyNameToProperName = (propertyName) => {
       return "";
   }
 };
+
+export const stringEmpty = (string) => {
+  return string.replace(/\s+/g, "") === "";
+};
