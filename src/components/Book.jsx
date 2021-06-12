@@ -35,7 +35,7 @@ const Book = ({ title, authors, image, id, shelfStatus, updateBooks }) => {
             }}
           ></div>
           <div className="book-shelf-changer">
-            <select defaultValue={shelfStatus} onClick={updateBookShelfStatus}>
+            <select defaultValue={shelfStatus === undefined ? 'none' : shelfStatus} onClick={updateBookShelfStatus}>
               <option value="move" disabled="">
                 Move to...
               </option>

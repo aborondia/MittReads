@@ -1277,7 +1277,8 @@
       "previewLink": "http://books.google.com/books?id=MeyfRrhyQc8C&printsec=frontcover&dq=biography&hl=&cd=10&source=gbs_api",
       "infoLink": "https://play.google.com/store/books/details?id=MeyfRrhyQc8C&source=gbs_api",
       "canonicalVolumeLink": "https://market.android.com/details?id=book-MeyfRrhyQc8C",
-      "id": "MeyfRrhyQc8C"
+      "id": "MeyfRrhyQc8C",
+      "shelfStatus": "none"
     },
     {
       "title": "Cleopatra",
@@ -1411,7 +1412,8 @@
       "previewLink": "http://books.google.com/books?id=NhLQbSdTKooC&printsec=frontcover&dq=biography&hl=&cd=13&source=gbs_api",
       "infoLink": "http://books.google.com/books?id=NhLQbSdTKooC&dq=biography&hl=&source=gbs_api",
       "canonicalVolumeLink": "https://books.google.com/books/about/The_Art_of_Biography_in_Antiquity.html?hl=&id=NhLQbSdTKooC",
-      "id": "NhLQbSdTKooC"
+      "id": "NhLQbSdTKooC",
+      "shelfStatus": "none"
     },
     {
       "title": "Samuel Beckett",
@@ -3206,7 +3208,8 @@
       "previewLink": "http://books.google.com/books?id=xUrm9z9OOdkC&printsec=frontcover&dq=drama&hl=&cd=15&source=gbs_api",
       "infoLink": "http://books.google.com/books?id=xUrm9z9OOdkC&dq=drama&hl=&source=gbs_api",
       "canonicalVolumeLink": "https://books.google.com/books/about/Modern_Arabic_Drama_in_Egypt.html?hl=&id=xUrm9z9OOdkC",
-      "id": "xUrm9z9OOdkC"
+      "id": "xUrm9z9OOdkC",
+      "shelfStatus": "none"
     },
     {
       "title": "Drama with Children",
@@ -11400,7 +11403,8 @@
       "previewLink": "http://books.google.com/books?id=bmeJz8v_jUIC&printsec=frontcover&dq=negotiate&hl=&cd=9&source=gbs_api",
       "infoLink": "https://play.google.com/store/books/details?id=bmeJz8v_jUIC&source=gbs_api",
       "canonicalVolumeLink": "https://market.android.com/details?id=book-bmeJz8v_jUIC",
-      "id": "bmeJz8v_jUIC"
+      "id": "bmeJz8v_jUIC",
+      "shelfStatus": "wantToRead"
     },
     {
       "title": "How to Negotiate Everything",
@@ -13248,7 +13252,8 @@
       "previewLink": "http://books.google.com/books?id=mRWT6alZt9oC&printsec=frontcover&dq=robotics&hl=&cd=13&source=gbs_api",
       "infoLink": "http://books.google.com/books?id=mRWT6alZt9oC&dq=robotics&hl=&source=gbs_api",
       "canonicalVolumeLink": "https://books.google.com/books/about/Behavior_based_Robotics.html?hl=&id=mRWT6alZt9oC",
-      "id": "mRWT6alZt9oC"
+      "id": "mRWT6alZt9oC",
+      "shelfStatus": "none"
     },
     {
       "title": "Industrial Robotics",
@@ -13546,7 +13551,8 @@
       "previewLink": "http://books.google.com/books?id=jT__IKy9wTgC&printsec=frontcover&dq=robotics&hl=&cd=20&source=gbs_api",
       "infoLink": "http://books.google.com/books?id=jT__IKy9wTgC&dq=robotics&hl=&source=gbs_api",
       "canonicalVolumeLink": "https://books.google.com/books/about/Mobile_Robotics_in_Healthcare.html?hl=&id=jT__IKy9wTgC",
-      "id": "jT__IKy9wTgC"
+      "id": "jT__IKy9wTgC",
+      "shelfStatus": "read"
     },
     {
       "title": "Satire",
@@ -13874,7 +13880,8 @@
       "previewLink": "http://books.google.com/books?id=d4crnXTQfD8C&printsec=frontcover&dq=satire&hl=&cd=8&source=gbs_api",
       "infoLink": "https://play.google.com/store/books/details?id=d4crnXTQfD8C&source=gbs_api",
       "canonicalVolumeLink": "https://market.android.com/details?id=book-d4crnXTQfD8C",
-      "id": "d4crnXTQfD8C"
+      "id": "d4crnXTQfD8C",
+      "shelfStatus": "read"
     },
     {
       "title": "The Practice of Satire in England, 1658–1770",
@@ -14517,7 +14524,7 @@
       "infoLink": "https://play.google.com/store/books/details?id=TpNkDQAAQBAJ&source=gbs_api",
       "canonicalVolumeLink": "https://market.android.com/details?id=book-TpNkDQAAQBAJ",
       "id": "TpNkDQAAQBAJ",
-      "shelfStatus": "read"
+      "shelfStatus": "wantToRead"
     },
     {
       "title": "Travel in the Ancient World",
@@ -14717,7 +14724,8 @@
       "previewLink": "http://books.google.com/books?id=uwcPAAAAQAAJ&printsec=frontcover&dq=travel&hl=&cd=9&source=gbs_api",
       "infoLink": "https://play.google.com/store/books/details?id=uwcPAAAAQAAJ&source=gbs_api",
       "canonicalVolumeLink": "https://market.android.com/details?id=book-uwcPAAAAQAAJ",
-      "id": "uwcPAAAAQAAJ"
+      "id": "uwcPAAAAQAAJ",
+      "shelfStatus": "currentlyReading"
     },
     {
       "title": "Islam and Travel in the Middle Ages",
@@ -15586,7 +15594,8 @@
       "previewLink": "http://books.google.com/books?id=5ZeYN-z7hicC&printsec=frontcover&dq=ultimate&hl=&cd=10&source=gbs_api",
       "infoLink": "http://books.google.com/books?id=5ZeYN-z7hicC&dq=ultimate&hl=&source=gbs_api",
       "canonicalVolumeLink": "https://books.google.com/books/about/The_Ultimate_Basket_Book.html?hl=&id=5ZeYN-z7hicC",
-      "id": "5ZeYN-z7hicC"
+      "id": "5ZeYN-z7hicC",
+      "shelfStatus": "currentlyReading"
     },
     {
       "title": "The Ultimate India Quiz Book",
