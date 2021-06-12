@@ -20,6 +20,7 @@ const WantToRead = ({books, updateBooks}) => {
                       : "./no-cover.jpg"
                   }
                   id={book.id}
+                  shelfStatus={book.shelfStatus}
                   key={index}
                   updateBooks={updateBooks}
                 />

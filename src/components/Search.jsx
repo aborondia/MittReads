@@ -1,10 +1,24 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Book from "./Book";
 
 const Search = ({ books, updateBooks }) => {
   const [searchResults, setSearchResults] = useState([]);
+  const [searchInput, setSearchInput] = useState("");
+  const [displaySearchText, setDisplaySearchText] = useState("");
   const searchResultsLength = searchResults.length;
+
+  useEffect(() => {
+    if (searchInput === "") {
+      setDisplaySearchText("");
+      return;
+    }
+    setDisplaySearchText(
+      `Your Search Returned ${searchResultsLength} ${
+        searchResultsLength === 1 ? "result" : "results"
+      }`
+    );
+  }, [searchInput]);
 
   const displaySearchResults = (event) => {
     const searchInput = event.target.value.toUpperCase();
@@ -15,7 +29,7 @@ const Search = ({ books, updateBooks }) => {
     }
 
     const resultsFound = [...books].filter((book) => {
-      return book.title.toUpperCase().includes(searchInput);
+      return book.title.toUpperCase().includes(searchInput.toUpperCase());
     });
 
     setSearchResults(resultsFound);
@@ -31,14 +45,15 @@ const Search = ({ books, updateBooks }) => {
           <input
             type="text"
             placeholder="Search by title or author"
-            onChange={displaySearchResults}
+            onChange={(event) => {
+              displaySearchResults(event);
+              setSearchInput(event.target.value)
+            }}
           />
         </div>
       </div>
       <div className="search-books-results">
-        <div className="results-quantity">
-          Your search returned {searchResults.length} {searchResultsLength === 1 ? 'result' : 'results'}.
-        </div>
+        <div className="results-quantity">{displaySearchText}</div>
         <ol className="books-grid">
           {searchResults.map((book, index) => {
             const images = book.imageLinks;
@@ -53,6 +68,7 @@ const Search = ({ books, updateBooks }) => {
                     : "./no-cover.jpg"
                 }
                 id={book.id}
+                shelfStatus={book.shelfStatus}
                 key={index}
                 updateBooks={updateBooks}
               />

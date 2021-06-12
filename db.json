@@ -127,7 +127,7 @@
       "canonicalVolumeLink": "https://books.google.com/books/about/Android.html?hl=&id=xlp6NE2NWecC",
       "id": "xlp6NE2NWecC",
       "shelf": "none",
-      "shelfStatus": "none"
+      "shelfStatus": "Move to..."
     },
     {
       "title": "Android Design Patterns",
@@ -176,7 +176,7 @@
       "canonicalVolumeLink": "https://market.android.com/details?id=book-Ifg1ZpSo7cwC",
       "id": "Ifg1ZpSo7cwC",
       "shelf": "currentlyReading",
-      "shelfStatus": "none"
+      "shelfStatus": "Move to..."
     },
     {
       "title": "Android Apps Security",
@@ -349,7 +349,8 @@
       "previewLink": "http://books.google.com/books?id=QCbUxHcYLskC&printsec=frontcover&dq=android&hl=&cd=8&source=gbs_api",
       "infoLink": "https://play.google.com/store/books/details?id=QCbUxHcYLskC&source=gbs_api",
       "canonicalVolumeLink": "https://market.android.com/details?id=book-QCbUxHcYLskC",
-      "id": "QCbUxHcYLskC"
+      "id": "QCbUxHcYLskC",
+      "shelfStatus": "Move to..."
     },
     {
       "title": "Beginning Android 2",
@@ -1101,7 +1102,8 @@
       "previewLink": "http://books.google.com/books?id=sqCGh16dvbIC&printsec=frontcover&dq=biography&hl=&cd=6&source=gbs_api",
       "infoLink": "http://books.google.com/books?id=sqCGh16dvbIC&dq=biography&hl=&source=gbs_api",
       "canonicalVolumeLink": "https://books.google.com/books/about/Banting.html?hl=&id=sqCGh16dvbIC",
-      "id": "sqCGh16dvbIC"
+      "id": "sqCGh16dvbIC",
+      "shelfStatus": "read"
     },
     {
       "title": "W. H. Auden",
@@ -1830,7 +1832,7 @@
       "infoLink": "http://books.google.com/books?id=BjDuAAAAMAAJ&dq=comics&hl=&source=gbs_api",
       "canonicalVolumeLink": "https://books.google.com/books/about/Batman.html?hl=&id=BjDuAAAAMAAJ",
       "id": "BjDuAAAAMAAJ",
-      "shelfStatus": "none"
+      "shelfStatus": "wantToRead"
     },
     {
       "title": "Comics Versus Art",
@@ -4384,7 +4386,8 @@
       "previewLink": "http://books.google.com/books?id=LKWSCgAAQBAJ&printsec=frontcover&dq=fitness&hl=&cd=3&source=gbs_api",
       "infoLink": "http://books.google.com/books?id=LKWSCgAAQBAJ&dq=fitness&hl=&source=gbs_api",
       "canonicalVolumeLink": "https://books.google.com/books/about/Barre_Fitness.html?hl=&id=LKWSCgAAQBAJ",
-      "id": "LKWSCgAAQBAJ"
+      "id": "LKWSCgAAQBAJ",
+      "shelfStatus": "none"
     },
     {
       "title": "Fitness and Health",

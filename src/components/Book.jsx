@@ -1,6 +1,6 @@
 import { getBooks } from "../services/apiHandler";
 
-const Book = ({ title, authors, image, id, updateBooks }) => {
+const Book = ({ title, authors, image, id, shelfStatus, updateBooks }) => {
   const updateBookShelfStatus = async (event) => {
     const valueToUpdateWith = event.target.value;
 
@@ -33,7 +33,7 @@ const Book = ({ title, authors, image, id, updateBooks }) => {
             }}
           ></div>
           <div className="book-shelf-changer">
-            <select onClick={updateBookShelfStatus}>
+            <select defaultValue={shelfStatus} onClick={updateBookShelfStatus}>
               <option value="move" disabled="">
                 Move to...
               </option>
