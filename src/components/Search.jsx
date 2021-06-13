@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Book from "./Book";
 import { displaySearchResults } from "../services/searchHandler";
 import useDebounce from "../services/debouncer";
-import { stringEmpty } from "../services/stringHandler";
+import { stringTooShort } from "../services/stringHandler";
 
 
 const Search = ({ books, updateBooks }) => {
@@ -13,13 +13,13 @@ const Search = ({ books, updateBooks }) => {
   const debouncedSearchInput = useDebounce(searchInput, 500);
 
   useEffect(() => {
-    if (stringEmpty(searchInput)) {
+    if (stringTooShort(searchInput)) {
       setDisplaySearchText("");
       setSearchResults([]);
       return;
     }
 
-    const resultsFound = displaySearchResults(books, searchInput);
+    const resultsFound = displaySearchResults(books, searchInput)
 
     setSearchResults(resultsFound);
     setDisplaySearchText(

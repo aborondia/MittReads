@@ -1,3 +1,5 @@
+import { formatForSorting, removeWhiteSpace } from "./stringHandler";
+
 export const displaySearchResults = (books, searchInput) => {
   let resultsFound = [...books].filter((book) => {
     return book.title.toUpperCase().includes(searchInput.toUpperCase().trim());
@@ -9,14 +11,17 @@ export const displaySearchResults = (books, searchInput) => {
 };
 
 const sortBySearchedText = (resultsFound, searchInput) => {
-  resultsFound.sort((a, b) => {
-    for (let letter of searchInput) {
-      if (a.title[0] === "") {
-        return 0;
-      }
+  for (let book of resultsFound) {
+    book.formattedTitle = formatForSorting(book.title);
+  }
+  resultsFound.sort((book1, book2) => {
+    const book1Title = book1.formattedTitle;
+    const book2Title = book2.formattedTitle;
+    const shortestBookTitle = book1Title.length < book2Title.length ? book1Title : book2Title;
 
-      if (a.title[0].toUpperCase() === letter) {
-        return -1;
+    for (let i = 0; i < shortestBookTitle.length; i++) {
+      if (book1Title[i] !== book2Title[i]) {
+        return book1Title.charCodeAt(i) - book2Title.charCodeAt(i);
       }
     }
   });
