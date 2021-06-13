@@ -476,7 +476,8 @@
       "previewLink": "http://books.google.com/books?id=h4FuBAAAQBAJ&pg=PA250&dq=android&hl=&cd=11&source=gbs_api",
       "infoLink": "https://play.google.com/store/books/details?id=h4FuBAAAQBAJ&source=gbs_api",
       "canonicalVolumeLink": "https://market.android.com/details?id=book-h4FuBAAAQBAJ",
-      "id": "h4FuBAAAQBAJ"
+      "id": "h4FuBAAAQBAJ",
+      "shelfStatus": "none"
     },
     {
       "title": "Pro Android 2",
@@ -16530,7 +16531,8 @@
       "previewLink": "http://books.google.com/books?id=3X6JJy-ERK8C&printsec=frontcover&dq=virtual+reality&hl=&cd=12&source=gbs_api",
       "infoLink": "https://play.google.com/store/books/details?id=3X6JJy-ERK8C&source=gbs_api",
       "canonicalVolumeLink": "https://market.android.com/details?id=book-3X6JJy-ERK8C",
-      "id": "3X6JJy-ERK8C"
+      "id": "3X6JJy-ERK8C",
+      "shelfStatus": "none"
     },
     {
       "title": "Narrative as Virtual Reality 2",
