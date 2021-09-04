@@ -4,6 +4,7 @@ export async function getBooks(updateBooks) {
   if (!response.ok) {
     throw new Error("Fetch was not successful");
   }
+  
   const data = await response.json();
 
   updateBooks(data);

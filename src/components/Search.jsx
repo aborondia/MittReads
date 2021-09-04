@@ -5,7 +5,7 @@ import { displaySearchResults, getSearchDisplayText } from "../services/searchHa
 import useDebounce from "../services/debouncer";
 import { stringEmpty } from "../services/stringHandler";
 
-const Search = ({ books, updateBooks }) => {
+const Search = ({ books, updateShelfStatus }) => {
 	const [searchResults, setSearchResults] = useState([]);
 	const [searchInput, setSearchInput] = useState("");
 	const [displaySearchText, setDisplaySearchText] = useState("");
@@ -54,7 +54,7 @@ const Search = ({ books, updateBooks }) => {
 								id={book.id}
 								shelfStatus={book.shelfStatus}
 								key={index}
-								updateBooks={updateBooks}
+								updateShelfStatus={updateShelfStatus}
 							/>
 						);
 					})}

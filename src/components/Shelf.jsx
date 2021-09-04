@@ -1,7 +1,7 @@
 import Book from "./Book";
 import { formatShelfLabel } from "../services/stringHandler";
 
-const Shelf = ({ shelfTag, books, updateBooks }) => {
+const Shelf = ({ shelfTag, books, updateShelfStatus }) => {
 	return (
 		<div className="bookshelf">
 			<h2 className="bookshelf-title">{formatShelfLabel(shelfTag)}</h2>
@@ -19,7 +19,7 @@ const Shelf = ({ shelfTag, books, updateBooks }) => {
 									id={book.id}
 									shelfStatus={book.shelfStatus}
 									key={index}
-									updateBooks={updateBooks}
+                  updateShelfStatus={updateShelfStatus}
 								/>
 							);
 						}
