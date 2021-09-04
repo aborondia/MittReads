@@ -1,4 +1,4 @@
-# MittBooks - [Andrew Borondia](https://cranky-beaver-6bfa9c.netlify.app)
+# [MittReads](https://fervent-visvesvaraya-fc46ee.netlify.app/) - [Andrew Borondia](https://cranky-beaver-6bfa9c.netlify.app)
 
 This is a project I made as part of the Software Developer program at the Manitoba Institute of trades and Technology.
 
